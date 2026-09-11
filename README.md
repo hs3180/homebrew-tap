@@ -7,3 +7,6 @@ brew install hs3180/tap/tidemux
 ```
 
 See the [TideMux README](https://github.com/hs3180/tidemux#readme) for configuration and usage.
+
+If Homebrew asks you to trust the formula, run
+`brew trust --formula hs3180/tap/tidemux`, then retry the install command.
