@@ -1,9 +1,9 @@
 class Tidemux < Formula
   desc "Local OpenAI and Anthropic compatible API gateway"
   homepage "https://github.com/hs3180/tidemux"
-  url "https://github.com/hs3180/tidemux/releases/download/v0.1.0/tidemux_0.1.0_c072fec63763_darwin_arm64.tar.gz"
-  version "0.1.0"
-  sha256 "e5f0709de5979de8c1bef4d8ff0d7d3adf0db4a57e3d30aff7516d4c4bc84fdf"
+  url "https://github.com/hs3180/tidemux/releases/download/v0.1.1/tidemux_0.1.1_darwin_arm64.tar.gz"
+  version "0.1.1"
+  sha256 "83357d108cf05a67319016fbd53c4983ecc9d7e7bd43507699c5e4818f2d4bfc"
   license "Apache-2.0"
   depends_on macos: :sequoia
   depends_on arch: :arm64
@@ -14,6 +14,6 @@ class Tidemux < Formula
   end
 
   test do
-    assert_equal "0.1.0", shell_output("#{bin}/tidemux version").strip
+    assert_equal "0.1.1", shell_output("#{bin}/tidemux version").strip
   end
 end
