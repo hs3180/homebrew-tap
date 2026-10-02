@@ -1,9 +1,13 @@
+# typed: strict
+# frozen_string_literal: true
+
+# Homebrew formula for the TideMux local API gateway.
 class Tidemux < Formula
   desc "Local OpenAI and Anthropic compatible API gateway"
   homepage "https://github.com/hs3180/tidemux"
-  url "https://github.com/hs3180/tidemux/releases/download/v0.2.2/tidemux_0.2.2_9223e0a802d7_darwin_arm64.tar.gz"
-  version "0.2.2"
-  sha256 "96add8b877a8800bb46e39daf8249b98781c04d35622e6548a3c782285e9a750"
+  url "https://github.com/hs3180/tidemux/releases/download/v0.3.0/tidemux_0.3.0_055d98a7375d_darwin_arm64.tar.gz"
+  version "0.3.0"
+  sha256 "6bc9523760362673c99a90e952ce484a3b341ee43b7864b5f17bef13639c8ad0"
   license "Apache-2.0"
   depends_on arch: :arm64
   depends_on macos: :sequoia
@@ -14,6 +18,6 @@ class Tidemux < Formula
   end
 
   test do
-    assert_equal "0.2.2", shell_output("#{bin}/tidemux version").strip
+    assert_equal "0.3.0", shell_output("#{bin}/tidemux version").strip
   end
 end
